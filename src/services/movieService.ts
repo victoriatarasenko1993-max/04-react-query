@@ -18,11 +18,13 @@ export async function fetchMovies(
     headers: {
       Authorization: `Bearer ${token}`,
     },
+    params: {
+      query,
+      page,
+      include_adult: false,
+      language: 'en-US',
+    },
   });
 
-  if (!response.ok) {
-    throw new Error(`API error: ${response.statusText}`);
-  }
-
-  return response.json();
+  return response.data;
 }
