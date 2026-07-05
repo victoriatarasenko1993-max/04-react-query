@@ -1,0 +1,27 @@
+.card {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.image {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  padding: 12px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.text {
+  margin: 4px 0;
+}
